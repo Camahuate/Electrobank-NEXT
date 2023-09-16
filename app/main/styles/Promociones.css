@@ -1,0 +1,50 @@
+.promo-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.promo-img-100 {
+    margin-bottom: 20px;
+    left: 260px;
+    width: 100%;
+}
+.cardIzquierda{
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.beneficios{
+    list-style: square inside;
+    list-style-type: none;
+}
+.card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.informacion{
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+.imagen-container {
+    display: inline-block;
+    width: 40%;
+    box-sizing: border-box;
+    padding: 20px; 
+}
+
+.tituloNaranja{     
+    color: #F35821; 
+    font-weight: bold;
+}
+.tituloVioleta{
+    color: #370A73;
+    font-weight: bold;
+}
+li{
+    list-style-type: none;
+}

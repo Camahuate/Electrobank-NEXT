@@ -1,0 +1,47 @@
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    padding: 10px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.cardIzquierda{
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-violeta {
+    background-color: #370A73;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-violeta:hover {
+    background-color: #F35821
+}
+
+.btn-violeta a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+
+.servicio{
+    max-width: 100px;
+    margin-bottom: 10px;
+}

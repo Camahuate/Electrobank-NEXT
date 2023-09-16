@@ -1,0 +1,41 @@
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #370A73;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.encabezado {
+    background-color: #E6E6E6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content:center;
+}
+
+.encabezado h1 {
+    font-size: 24px;
+    margin: 0;
+}
+.menu-icon {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1;
+    color: #370A73;
+}
+.btn-violeta {
+    background-color: #370A73;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-violeta:hover {
+    background-color: #F35821
+}
