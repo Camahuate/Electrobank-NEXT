@@ -1,7 +1,6 @@
 import React from 'react';
 import './styles/Header.css';
-import Electrobank from './images/ELECTOBANK-logo.png'
-
+import Image from 'next/image'
 
 function Header() {
 
@@ -28,7 +27,8 @@ function Header() {
 
   return (
     <header className="encabezado">
-      <h1><img className="logo" src={Electrobank} alt="Electrobank Logo" /></h1>
+      <h1><Image className="logo" src='/ELECTOBANK-logo.png' alt="Electrobank Logo" width={200} height={24}
+              priority /></h1>
       <nav>
         <div className="menu-icon" onClick={toggleMenu}>
           <div className="bar" id="bar1" />
@@ -39,6 +39,5 @@ function Header() {
     </header>
   );
 }
-
 
 export default Header;

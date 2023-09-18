@@ -1,8 +1,5 @@
 import React from "react";
-import tarjeta1 from '../images/tarjeta1.png'
-import tarjeta2 from '../images/tarjeta2.png'
-import graficocuentas from '../images/grafico_cuentas.png'
-import graficocuentas2 from '../images/grafico_cuentas2.png'
+import Image from 'next/image';
 import '../styles/Cuentas.css';
 import ConversorMoneda from "../ConversorMoneda";
 import Header from '../Header';
@@ -16,7 +13,8 @@ function Cuentas () {
         <div class="row">
             <div class="column">
                 <div class="card">
-                    <img src={tarjeta1} className="tarjeta" alt="Tarjeta bancaria"/>
+                    <Image src='/tarjeta1.png' className="tarjeta" alt="Tarjeta bancaria" width={200} height={24}
+              priority/>
                     <h3>Caja de ahorro</h3>
                     <p>Saldo: $350.000</p>
                     <ul>
@@ -29,7 +27,8 @@ function Cuentas () {
             </div>
             <div class="column">
                 <div class="card">
-                    <img src={tarjeta2} className="tarjeta" alt="Tarjeta bancaria"/>
+                    <Image src='/tarjeta2.png' className="tarjeta" alt="Tarjeta bancaria" width={200} height={24}
+              priority/>
                     <h3>Cuenta Corriente</h3>
                     <p>Saldo: $150.700</p>
                     <ul>
@@ -45,8 +44,10 @@ function Cuentas () {
         <div class="row"></div>
         <div class="column">
             <div class="card">
-                <img src={graficocuentas} className="grafico" alt="grafico cuentas bancarias"/>
-                <img src={graficocuentas2} className="grafico" alt="grafico cuentas bancarias"/>
+                <Image src='/grafico_cuentas.png' className="grafico" alt="grafico cuentas bancarias" width={200} height={24}
+              priority/>
+                <Image src='/grafico_cuentas2.png' className="grafico" alt="grafico cuentas bancarias" width={200} height={24}
+              priority/>
             </div>
         </div>
         <ConversorMoneda />

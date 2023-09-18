@@ -39,3 +39,8 @@
 .btn-violeta:hover {
     background-color: #F35821
 }
+.logo {
+    vertical-align: middle;
+    padding-right: 50px;
+    max-width: 200px;
+}

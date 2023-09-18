@@ -1,8 +1,6 @@
 import React from 'react';
-import sube from '../images/SUBE.png'
-import fibertel from '../images/FIBERTEL.png'
-import personal from '../images/PERSONAL.png'
-import visa from '../images/VISA.png'
+
+import Image from 'next/image';
 import '../styles/Pagos.css';
 import Header from '../Header';
 import MenuLateral from '../MenuLateral';
@@ -21,25 +19,29 @@ function Pagos () {
         <div class="row">
             <div class="column">
                 <div class="card">
-                    <img src={sube} className="servicio" alt="SUBE"/>
+                    <Image src='/SUBE.png' className="servicio" alt="SUBE" width={200} height={24}
+              priority/>
                     <h3>SUBE</h3>
                 </div>
             </div>
             <div class="column">
                 <div class="card">
-                    <img src={fibertel} className="servicio" alt="Fibertel"/>
+                    <Image src='/FIBERTEL.png' className="servicio" alt="Fibertel" width={200} height={24}
+              priority/>
                     <h3>Visa</h3>
                 </div>
             </div>
             <div class="column">
                 <div class="card">
-                    <img src={personal} className="servicio" alt="Personal"/>
+                    <Image src='/PERSONAL.png' className="servicio" alt="Personal" width={200} height={24}
+              priority/>
                     <h3>Personal</h3>
                 </div>
             </div>
             <div class="column">
                 <div class="card">
-                    <img src={visa} className="servicio" alt="Visa"/>
+                    <Image src='/VISA.png' className="servicio" alt="Visa" width={200} height={24}
+              priority/>
                     <h3>Fibertel</h3>
                 </div>
             </div>

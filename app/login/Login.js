@@ -1,7 +1,7 @@
 import React from "react"
 import { useState } from "react";
-import Electrobank from '../main/images/ELECTOBANK-logo.png'
-import '../main/styles/Login.css'
+import Image from 'next/image';
+import '../main/styles/Login.css';
 
 const Login = ({setIsLogged}) => {
     const [email, setEmail] = useState('');
@@ -25,7 +25,8 @@ const Login = ({setIsLogged}) => {
         <div className='body-login'>
               <div className='login-container'>
                 <div className='form-login'>
-                <img className="logo" src={Electrobank} alt="logobank" />
+                <Image  className="logo" src='/ELECTOBANK-logo.png' alt="logobank" width={200} height={24}
+              priority/>
                 <h2>Iniciar sesión</h2>
                 <input
                   type="email"

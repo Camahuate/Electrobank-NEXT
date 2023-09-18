@@ -1,8 +1,7 @@
 import React from 'react';
 
-import Promo1 from './images/promocion1.jpeg';
-import Promo2 from './images/promocion2.jpeg';
-import Promo3 from './images/promocion3.jpeg';
+import Image from 'next/image';
+
 
 function Promociones() {
   return (
@@ -11,17 +10,20 @@ function Promociones() {
         <div className="promocion cardIzquierda">
           <h2 className="tituloVioleta">Promociones y Beneficios</h2>
           <div className="imagen-container">
-            <img src={Promo1} alt="Promoción 1" className="promo-img" />
+            <Image src='/promocion1.jpeg' alt="Promoción 1" className="promo-img" width={200} height={24}
+              priority/>
           </div>
           <div className="imagen-container">
-            <img src={Promo3} alt="Promocion 3" className="promo-img" />
+            <Image src='/promocion3.jpeg' alt="Promocion 3" className="promo-img" width={200} height={24}
+              priority/>
           </div>
           <p className="tituloNaranja">
             ¡Abre una cuenta hoy y recibe un bono de $1000!
           </p>
         </div>
         <div className="promocion">
-          <img src={Promo2} alt="Promoción 2" className="promo-img-100" />
+          <Image src='/promocion2.jpeg' alt="Promoción 2" className="promo-img-100" width={200} height={24}
+              priority/>
           <p className="tituloNaranja" style={{ textAlign: "center" }}>
             Transferencias gratuitas a nivel nacional.
           </p>

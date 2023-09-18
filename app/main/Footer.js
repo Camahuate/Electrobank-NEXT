@@ -1,8 +1,7 @@
 import React from 'react';
 import './styles/Footer.css';
-import linkedin from './images/linkedin.svg';
-import instagram from './images/instagram.svg';
-import facebook from './images/facebook.svg';
+import Image from 'next/image';
+
 function Footer() {
   return (
     <footer className="pie-depagina">
@@ -14,13 +13,16 @@ function Footer() {
             </div>
             <div className="social-icons">
                 <a href="https://www.facebook.com/" target="_blank">
-                <img src={facebook} alt="Facebook" />
+                <Image src='/facebook.svg' alt="Facebook" width={200} height={24}
+              priority/>
                 </a>
                 <a href="https://www.instagram.com/" target="_blank">
-                <img src={instagram} alt="Instagram" />
+                <Image src='/instagram.svg' alt="Instagram" width={200} height={24}
+              priority/>
                 </a>
                 <a href="https://www.linkedin.com/" target="_blank">
-                <img src={linkedin} alt="LinkedIn" />
+                <Image src='/linkedin.svg'alt="LinkedIn" width={200} height={24}
+              priority/>
                 </a>
             </div>
         </>
