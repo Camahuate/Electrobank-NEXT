@@ -25,7 +25,7 @@ const Login = ({setIsLogged}) => {
         <div className='body-login'>
               <div className='login-container'>
                 <div className='form-login'>
-                <Image  className="logo" src='/ELECTOBANK-logo.png' alt="logobank" width={200} height={24}
+                <Image  className="logo" src='/ELECTOBANK-logo.png' alt="logobank" sizes="max-width: 200px, " width={200} height={24}
               priority/>
                 <h2>Iniciar sesión</h2>
                 <input

@@ -27,8 +27,14 @@ function Header() {
 
   return (
     <header className="encabezado">
-      <h1><Image className="logo" src='/ELECTOBANK-logo.png' alt="Electrobank Logo" width={200} height={24}
-              priority /></h1>
+      <div style={{ display: 'flex'}}>
+      <h1><Image className="logo" 
+      src='/ELECTOBANK-logo.png' 
+      alt="Electrobank Logo" 
+      sizes='(max-width: 200px)100vw' width= '300'
+        height= '24'
+        /></h1>
+</div>
       <nav>
         <div className="menu-icon" onClick={toggleMenu}>
           <div className="bar" id="bar1" />

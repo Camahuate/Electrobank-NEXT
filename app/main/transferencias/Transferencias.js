@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/Transferencias.css';
 import Header from '../Header';
 import MenuLateral from '../MenuLateral';
+import Prestamos from "./Prestamos";
 
 function Transferencias () {
     const mostrarMensaje = (event) => {
@@ -47,8 +48,10 @@ function Transferencias () {
                     <button className="btn-violeta" type="submit">Transferir</button>
                 </ul>
             </form>
+            <Prestamos />
         </div>
     </div>
+    
     );
 }
 

@@ -4,6 +4,7 @@ import MenuLateral from "./MenuLateral";
 import Header from "./Header";
 import Footer from "./Footer";
 
+
 function Inicio () {
     return (
         <div>

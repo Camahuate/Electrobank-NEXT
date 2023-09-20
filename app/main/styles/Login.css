@@ -23,6 +23,7 @@
 .logo {
     width: 100px;
     margin-bottom: 20px;
+    max-width: 200px;
 }
 
 h2 {

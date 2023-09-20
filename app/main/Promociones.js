@@ -10,11 +10,11 @@ function Promociones() {
         <div className="promocion cardIzquierda">
           <h2 className="tituloVioleta">Promociones y Beneficios</h2>
           <div className="imagen-container">
-            <Image src='/promocion1.jpeg' alt="Promoción 1" className="promo-img" width={200} height={24}
+            <Image src='/promocion1.jpeg' alt="Promoción 1" className="promo-img" width={200} height={24} sizes='max-width: 100%' style={{width: '100%',height: 'auto',}}
               priority/>
           </div>
           <div className="imagen-container">
-            <Image src='/promocion3.jpeg' alt="Promocion 3" className="promo-img" width={200} height={24}
+            <Image src='/promocion3.jpeg' alt="Promocion 3" className="promo-img" width={200} height={24} sizes='max-width: 100%' style={{width: '100%',height: 'auto',}}
               priority/>
           </div>
           <p className="tituloNaranja">
@@ -22,7 +22,7 @@ function Promociones() {
           </p>
         </div>
         <div className="promocion">
-          <Image src='/promocion2.jpeg' alt="Promoción 2" className="promo-img-100" width={200} height={24}
+          <Image src='/promocion2.jpeg' alt="Promoción 2" className="promo-img-100" width={200} height={24} sizes='margin-bottom: 20px'style={{left: '260px',width: '100%'}}
               priority/>
           <p className="tituloNaranja" style={{ textAlign: "center" }}>
             Transferencias gratuitas a nivel nacional.
