@@ -1,3 +1,5 @@
+/* Transferencias.module.css */
+
 .tituloVioleta {
     color: #8a2be2;
     font-size: 24px;
@@ -19,25 +21,23 @@
     max-width: 400px;
 }
 
-ul {
+.myList {
     list-style-type: none;
     padding: 0;
 }
 
-li {
+.listItem {
     margin-bottom: 15px;
 }
 
-label {
+.labelStyle {
     display: block;
     margin-bottom: 5px;
     color: #555;
 }
 
-input[type="text"],
-input[type="number"],
-input[type="datetime-local"],
-select {
+/* Agrega clases para estilos de input y select */
+.inputStyle {
     width: 100%;
     padding: 8px 10px;
     border: 1px solid #ccc;
@@ -47,13 +47,11 @@ select {
     transition: border-color 0.2s;
 }
 
-input[type="text"]:focus,
-input[type="number"]:focus,
-input[type="datetime-local"]:focus {
+.inputStyle:focus {
     border-color: #8a2be2;
 }
 
-select {
+.selectStyle {
     width: 100%;
     padding: 8px;
 }

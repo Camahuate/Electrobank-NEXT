@@ -1,7 +1,6 @@
 import React from "react";
 import Image from 'next/image';
-import '../styles/Cuentas.css';
-import ConversorMoneda from "../ConversorMoneda";
+import styles from '../../styles/Cuentas.module.css'
 import Header from '../Header';
 import MenuLateral from '../MenuLateral';
 
@@ -10,25 +9,23 @@ function Cuentas () {
         <div>
         <Header/>
         <MenuLateral/>
-        <div class="row">
-            <div class="column">
-                <div class="card">
-                    <Image src='/tarjeta1.png' className="tarjeta" alt="Tarjeta bancaria" width={200} height={24}
-              priority/>
+        <div className="row">
+            <div className="column">
+                <div className={styles.card}>
+                    <Image src='/tarjeta1.png' className={styles.tarjeta} alt="Tarjeta bancaria" width={200} height={24} priority/>
                     <h3>Caja de ahorro</h3>
                     <p>Saldo: $350.000</p>
                     <ul>
-                        <li>Compra en supermercadp: -$50.000</li>
+                        <li>Compra en supermercado: -$50.000</li>
                         <li>Depósito en efectivo: +$10.000</li>
                         <li>Retiro en cajero: -$2.000</li>
                         <li><a href="#">Ver más movimientos</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="column">
-                <div class="card">
-                    <Image src='/tarjeta2.png' className="tarjeta" alt="Tarjeta bancaria" width={200} height={24}
-              priority/>
+            <div className="column">
+                <div className={styles.card}> 
+                    <Image src='/tarjeta2.png' className={styles.tarjeta} alt="Tarjeta bancaria" width={200} height={24} priority/>
                     <h3>Cuenta Corriente</h3>
                     <p>Saldo: $150.700</p>
                     <ul>
@@ -39,15 +36,12 @@ function Cuentas () {
                     </ul>
                 </div>
             </div>
-
         </div>
-        <div class="row"></div>
-        <div class="column">
-            <div class="card">
-                <Image src='/grafico_cuentas.png' className="grafico" alt="grafico cuentas bancarias" width={200} height={24}
-              priority/>
-                <Image src='/grafico_cuentas2.png' className="grafico" alt="grafico cuentas bancarias" width={200} height={24}
-              priority/>
+        <div className="row"></div>
+        <div className="column">
+            <div className={styles.card}> 
+                <Image src='/grafico_cuentas.png' className={styles.grafico} alt="grafico cuentas bancarias" width={200} height={24} priority/>
+                <Image src='/grafico_cuentas2.png' className={styles.grafico} alt="grafico cuentas bancarias" width={200} height={24} priority/>
             </div>
         </div>
         <ConversorMoneda />

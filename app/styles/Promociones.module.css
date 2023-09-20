@@ -1,0 +1,57 @@
+/* Promociones.module.css */
+
+.promociones {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .promocion {
+    width: 48%; /* Ancho de cada promoción */
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .tituloVioleta {
+    color: #370A73;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .imagenContainer {
+    display: inline-block;
+    width: 40%;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  
+  .promoImg {
+    
+  }
+  
+  .promoImg100 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .cardIzquierda {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .beneficios {
+    list-style: square inside;
+    list-style-type: none;
+    margin-bottom: 10px;
+  }
+  
+  .informacion {
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  

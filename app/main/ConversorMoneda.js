@@ -1,5 +1,5 @@
-import './styles/Promociones.css';
 import React, { useState, useEffect } from 'react';
+import styles from './Promociones.module.css'; 
 
 function ConversorMoneda() {
   const [amount, setAmount] = useState('');
@@ -61,9 +61,9 @@ function ConversorMoneda() {
   };
 
   return (
-    <div className="cardIzquierda">
-      <h2 className="tituloVioleta">Conversor de moneda</h2>
-      <div className="input-container">
+    <div className={`${styles.cardIzquierda} ${styles.otraClaseDePromociones}`}> {/* Aplica las clases CSS de Promociones */}
+      <h2 className={styles.tituloVioleta}>Conversor de moneda</h2>
+      <div className={styles.inputContainer}>
         <label htmlFor="amount">Cantidad:</label>
         <input
           type="number"
@@ -74,8 +74,7 @@ function ConversorMoneda() {
         />
       </div>
       <br />
-      <br />
-      <div className="input-container">
+      <div className={styles.inputContainer}>
         <label htmlFor="fromCurrency">De:</label>
         <select
           id="fromCurrency"
@@ -90,8 +89,7 @@ function ConversorMoneda() {
         </select>
       </div>
       <br />
-      <br />
-      <div className="input-container">
+      <div className={styles.inputContainer}>
         <label htmlFor="toCurrency">A:</label>
         <select
           id="toCurrency"
@@ -106,8 +104,6 @@ function ConversorMoneda() {
         </select>
       </div>
       <br />
-      <br />
-      
       <p>
         {result && <span id="result">{result}</span>}
       </p>

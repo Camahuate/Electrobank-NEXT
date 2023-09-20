@@ -4,7 +4,13 @@
     background-color: #370A73;
     margin: 6px 0;
     transition: 0.4s;
-}
+  }
+  
+  
+.bar.open {
+    background-color: white; 
+    transform: translateX(-8px);
+  }
 
 .encabezado {
     background-color: #E6E6E6;
@@ -42,5 +48,5 @@
 .logo {
     vertical-align: middle;
     padding-right: 50px;
-    max-width: 200px;
+    max-width: 150px;
 }
