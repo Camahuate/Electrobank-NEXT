@@ -21,13 +21,13 @@ export default function Pagos ({params}){
             <h2>Facturas pendientes</h2>
             <ul>
                 <li>
-                    <b>Empresa:</b> {pago.empresa}
+                    <b>Empresa:</b>{pago.empresa}
                 </li>
                 <li>
-                    <b>Factura Nº:</b> {pago.numero}
+                    <b>Factura Nº:</b>{pago.numero}
                 </li>
                 <li>
-                    <b>Fecha de Vencimiento:</b> {pago.fecha}
+                    <b>Fecha de Vencimiento:</b>{pago.fecha}
                 </li>
             </ul>
         </div>
