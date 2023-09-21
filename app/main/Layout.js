@@ -1,16 +1,13 @@
 import React from "react";
-import { BrowserRouter , Route, Link, Routes } from "react-router-dom";
-import Inicio from "./Inicio";
-import Transferencias from "./transferencias/Transferencias";
+import {Link} from "react-router-dom";
 import Header from "./Header";
-import Pagos from "./pagos/Pagos";
-import Cuentas from "./cuentas/Cuentas";
 import MenuLateral from "./MenuLateral";
 
-const Layout = () => {
+export default function Layout({
+  children,}){
 
   return (
-    <BrowserRouter>
+    <div>
     <MenuLateral/>
     <Header/>
     <header>
@@ -19,14 +16,7 @@ const Layout = () => {
         <Link to="/pagos">Pagos</Link>
         <Link to="/cuentas">Cuentas</Link>
     </header>
-    <Routes>   
-        <Route path="/" exact element={Inicio} />
-        <Route path="/transferencias" element={Transferencias} />
-        <Route path="/pagos" element={Pagos} />
-        <Route path="/cuentas" element={Cuentas} />
-    </Routes>
-    </BrowserRouter>
+    {children}
+    </div>
   );
-};
-
-export default Layout;
+}

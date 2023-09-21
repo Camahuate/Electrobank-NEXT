@@ -1,16 +1,32 @@
 import React from 'react';
-
+import Link from 'next/link';
 import Image from 'next/image';
 import '../styles/Pagos.css';
 import Header from '../Header';
 import MenuLateral from '../MenuLateral';
+import {useEffect, useState} from "react";
 
-function Pagos () {
+export default function Pagos () {
+    const [pagos, setPagos] = useState([])
+    
     const pagoExitoso = (event) => {
         event.preventDefault(); 
         alert("Pago realizado con éxito");
         window.location.href = Pagos; 
     }
+    
+    const getPagos = ()=>{
+        fetch("/statics/pagos.json")
+            .then(response=>{
+                return response.json()
+            })
+            .then(data=>{
+                setPagos(data)
+            })
+    }
+    useEffect(()=>{
+        getPagos()
+    }, [])
     return (
     <div>
         <Header/>
@@ -49,39 +65,16 @@ function Pagos () {
         <h2>Facturas pendientes</h2>
         <div className="cardIzquierda">
             <ul>
-                <li>
-                    <span>Número de Factura: 12345</span>
-                    <button className="btn-violeta" onclick={pagoExitoso}>Pagar</button>
+                {pagos.map(p => (
+                <li key={`${p.empresa}:${p.numero}`}>
+                    <h4>{p.empresa}</h4>
+                    <Link href={`/main/pagos/${p.numero}`} >
+                        <button className="btn-violeta" onclick={pagoExitoso}>Pagar</button>
+                        </Link>
                 </li>
-                <br/>
-                <li>
-                    <span>Número de Factura: 67890</span>
-                    <button className="btn-violeta" onclick={pagoExitoso}>Pagar</button>
-                </li>
-                <br/>
-                <li>
-                    <span>Número de Factura: 6666</span>
-                    <button className="btn-violeta" onclick={pagoExitoso}>Pagar</button>
-                </li>
-                <br/>
-                <li>
-                    <span>Número de Factura: 12345</span>
-                    <button className="btn-violeta" onclick={pagoExitoso}>Pagar</button>
-                </li>
-                <br/>
-                <li>
-                    <span>Número de Factura: 98765</span>
-                    <button className="btn-violeta">Pagar</button>
-                </li>
-                <br/>
-                <li>
-                    <span>Número de Factura: 76543</span>
-                    <button className="btn-violeta">Pagar</button>
-                </li>
+                ))}
             </ul>
         </div>
     </div>
     );
 }
-
-export default Pagos

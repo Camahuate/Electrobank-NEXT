@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Prestamos() {
+export default function Prestamos() {
   const [monto, setMonto] = useState('');
   const [tasa, setTasa] = useState('');
   const [cuotaMensual, setCuotaMensual] = useState('');
@@ -60,5 +60,3 @@ function Prestamos() {
     </div>
   );
 }
-
-export default Prestamos;

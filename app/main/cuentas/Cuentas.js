@@ -5,7 +5,7 @@ import ConversorMoneda from "../ConversorMoneda";
 import Header from '../Header';
 import MenuLateral from '../MenuLateral';
 
-function Cuentas () {
+export default function Cuentas () {
     return (
         <div>
         <Header/>
@@ -54,5 +54,3 @@ function Cuentas () {
     </div>
     )
 }
-
-export default Cuentas;

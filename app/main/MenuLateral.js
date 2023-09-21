@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/MenuLateral.css';
 import { Link } from "react-router-dom";
-function MenuLateral() {
+export default function MenuLateral() {
   return (
     <div className="menu-lateral">
       <ul>
@@ -21,5 +21,3 @@ function MenuLateral() {
     </div>
   );
 }
-
-export default MenuLateral;

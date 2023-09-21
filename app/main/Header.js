@@ -2,7 +2,7 @@ import React from 'react';
 import './styles/Header.css';
 import Image from 'next/image'
 
-function Header() {
+export default function Header() {
 
   const toggleMenu = () => {
     const menuLateral = document.querySelector('.menu-lateral');
@@ -46,4 +46,3 @@ function Header() {
   );
 }
 
-export default Header;

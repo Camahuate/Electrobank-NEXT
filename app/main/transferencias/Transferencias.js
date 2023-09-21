@@ -4,7 +4,7 @@ import Header from '../Header';
 import MenuLateral from '../MenuLateral';
 import Prestamos from "./Prestamos";
 
-function Transferencias () {
+export default function Transferencias () {
     const mostrarMensaje = (event) => {
         event.preventDefault(); 
         alert("Transferencia realizada con éxito");
@@ -54,5 +54,3 @@ function Transferencias () {
     
     );
 }
-
-export default Transferencias;

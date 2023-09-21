@@ -9,8 +9,7 @@ import Pagos from './main/pagos/Pagos';
 import Cuentas from './main/cuentas/Cuentas';
 import Layout from './main/Layout';
 
-
-function App() {
+export default function App() {
 
   const [isLogged, setIsLogged] = useState(false);
 
@@ -45,5 +44,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

@@ -5,7 +5,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 
-function Inicio () {
+export default function Inicio () {
     return (
         <div>
             <Header/>
@@ -15,4 +15,3 @@ function Inicio () {
         </div>
     );
 }
-export default Inicio;

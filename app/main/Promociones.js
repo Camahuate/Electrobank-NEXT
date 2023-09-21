@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 
 
-function Promociones() {
+export default function Promociones() {
   return (
     <>
       <section className="promociones">
@@ -50,5 +50,3 @@ function Promociones() {
     </>
   );
 }
-
-export default Promociones;

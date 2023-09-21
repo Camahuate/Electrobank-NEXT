@@ -2,7 +2,7 @@ import React from 'react';
 import './styles/Promociones.css';
 
 
-function Informacion() {
+export default function Informacion() {
   return (
     <section className="informacion cardIzquierda">
         <h2 className="tituloVioleta">¿Por qué elegir Electrobank?</h2>
@@ -22,4 +22,3 @@ function Informacion() {
     );
 }
 
-export default Informacion;

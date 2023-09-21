@@ -1,7 +1,7 @@
 import './styles/Promociones.css';
 import React, { useState, useEffect } from 'react';
 
-function ConversorMoneda() {
+export default function ConversorMoneda() {
   const [amount, setAmount] = useState('');
   const [fromCurrency, setFromCurrency] = useState('USD');
   const [toCurrency, setToCurrency] = useState('USD');
@@ -114,5 +114,3 @@ function ConversorMoneda() {
     </div>
   );
 }
-
-export default ConversorMoneda;

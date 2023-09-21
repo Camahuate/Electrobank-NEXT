@@ -2,7 +2,7 @@ import React from 'react';
 import './styles/Footer.css';
 import Image from 'next/image';
 
-function Footer() {
+export default function Footer() {
   return (
     <footer className="pie-depagina">
         <>
@@ -31,4 +31,3 @@ function Footer() {
   );
 }
 
-export default Footer;
