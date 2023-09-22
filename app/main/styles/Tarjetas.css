@@ -1,0 +1,56 @@
+
+.tarjetas-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #FFA500; /* Naranja */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    color: #fff; /* Texto en blanco */
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Imágenes de tarjetas */
+.tarjeta {
+    border-radius: 10px;
+}
+
+/* Encabezado de tarjeta */
+h3 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* Detalles de tarjeta */
+p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Botón Seleccionar */
+button {
+    background-color: #9400D3; /* Violeta */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #800080; /* Violeta más oscuro al pasar el ratón */
+}
+
