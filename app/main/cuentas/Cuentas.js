@@ -13,7 +13,7 @@ export default function Cuentas () {
         <div class="row">
             <div class="column">
                 <div class="card">
-                    <Image src='/tarjeta1.png' className="tarjeta" alt="Tarjeta bancaria" width={200} height={24}
+                    <Image src='/tarjeta1.png' className="tarjeta" alt="Tarjeta bancaria" width={300} height={200}
               priority/>
                     <h3>Caja de ahorro</h3>
                     <p>Saldo: $350.000</p>
@@ -27,7 +27,7 @@ export default function Cuentas () {
             </div>
             <div class="column">
                 <div class="card">
-                    <Image src='/tarjeta2.png' className="tarjeta" alt="Tarjeta bancaria" width={200} height={24}
+                    <Image src='/tarjeta2.png' className="tarjeta" alt="Tarjeta bancaria" width={300} height={200}
               priority/>
                     <h3>Cuenta Corriente</h3>
                     <p>Saldo: $150.700</p>
@@ -44,9 +44,9 @@ export default function Cuentas () {
         <div class="row"></div>
         <div class="column">
             <div class="card">
-                <Image src='/grafico_cuentas.png' className="grafico" alt="grafico cuentas bancarias" width={200} height={24}
+                <Image src='/grafico_cuentas.png' className="grafico" alt="grafico cuentas bancarias" width={300} height={200}
               priority/>
-                <Image src='/grafico_cuentas2.png' className="grafico" alt="grafico cuentas bancarias" width={200} height={24}
+                <Image src='/grafico_cuentas2.png' className="grafico" alt="grafico cuentas bancarias" width={300} height={200}
               priority/>
             </div>
         </div>

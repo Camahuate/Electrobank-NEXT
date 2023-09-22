@@ -1,18 +1,23 @@
 [
-    {
+    {   
+        "id": 1,
         "empresa":"Personal",
-        "numero": "11"
+        "monto": "1500"
     },
-    {
+    {   
+        "id": 2,
         "empresa":"Fibertel",
-        "numero":"22"
+        "nmonto":"2000"
     },
-    {
+    {   
+        "id": 3,
         "empresa":"Edenor",
-        "numero":"33"
+        "monto":"2500"
     },
-    {
+    {   
+        "id": 4,
         "empresa":"SUBE",
-        "numero":"44"
+        "monto":"3000"
     }
 ]
+
